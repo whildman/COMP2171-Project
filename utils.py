@@ -118,6 +118,7 @@ def inventory_gui():
     ctk.CTkLabel(inventory, text="Inventory Management", font=("Arial", 16)).pack(pady=20)
     ctk.CTkButton(inventory, text="Add Item", command=add_item).pack(pady=10)
     ctk.CTkButton(inventory, text="View Inventory", command=view_inventory).pack(pady=10)
+    ctk.CTkButton(inventory, text="Delete Item", command=delete_item).pack(pady=10)
 
 def add_item():
     load_data()

@@ -84,7 +84,7 @@ def show_dashboard(permissions):
     add_chart(dashboard)
     add_world_map(dashboard)
 
-    if permissions["inventory_adding"] or permissions["inventory_editing"] or permissions["inventory_deleting"]:
+    #if permissions["inventory_adding"] or permissions["inventory_editing"] or permissions["inventory_deleting"]:
         ctk.CTkButton(dashboard, text="Inventory", font=("Arial", 14), command=inventory_gui).pack(pady=20)
     ctk.CTkButton(dashboard, text="Print Shipping Labels", font=("Arial", 14), command=print_shipping_labels).pack(pady=20)
     ctk.CTkButton(dashboard, text="Generate Order Labels", font=("Arial", 14), command=generate_order_labels).pack(pady=20)
